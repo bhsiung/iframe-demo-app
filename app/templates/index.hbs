@@ -1,0 +1,25 @@
+{{page-title "Index"}}
+
+<div class="page">
+  <form class="job-editor">
+    <p>
+      <label for="company-field">company</label>
+      <input id="company-field" placeholder="company" name="company" />
+    </p>
+    <p>
+      <label for="title-field">title</label>
+      <input id="title-field" placeholder="title" name="title" />
+    </p>
+    <p>
+      <label for="location-field">location</label>
+      <input id="location-field" placeholder="location" name="location" />
+    </p>
+    <p>
+      <label for="job-description-field">job description</label>
+      <textarea id="job-description-field" placeholder="job-description" name="job-description" />
+    </p>
+  </form>
+  <div class="iframe-wrapper-container">
+    <IframeWrapper @src="/preview" />
+  </div>
+</div>
