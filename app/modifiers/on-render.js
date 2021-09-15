@@ -5,4 +5,10 @@ export default class TrackClickModifier extends Modifier {
     const [onRender] = this.args.positional;
     onRender(this.element);
   }
+  didInstall() {
+    const [onRender] = this.args.positional;
+    this.element.addEventListener('load', () => {
+      onRender(this.element);
+    });
+  }
 }
