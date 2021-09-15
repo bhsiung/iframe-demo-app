@@ -1,1 +1,7 @@
-<iframe src={{@src}} />
+<iframe
+  ...attributes
+  {{on-render
+    this.onRender
+    @this.data
+  }}
+/>
