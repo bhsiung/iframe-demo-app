@@ -4,22 +4,26 @@
   <form class="job-editor">
     <p>
       <label for="company-field">company</label>
-      <input id="company-field" placeholder="company" name="company" />
+      <input id="company-field" placeholder="company" name="company" {{on "input" this.onChange}} />
     </p>
     <p>
       <label for="title-field">title</label>
-      <input id="title-field" placeholder="title" name="title" />
+      <input id="title-field" placeholder="title" name="title" {{on "input" this.onChange}} />
     </p>
     <p>
       <label for="location-field">location</label>
-      <input id="location-field" placeholder="location" name="location" />
+      <input id="location-field" placeholder="location" name="location" {{on "input" this.onChange}} />
     </p>
     <p>
       <label for="job-description-field">job description</label>
-      <textarea id="job-description-field" placeholder="job-description" name="job-description" />
+      <textarea id="job-description-field" placeholder="job-description" name="jobDescription" {{on "input" this.onChange}} />
     </p>
   </form>
   <div class="iframe-wrapper-container">
-    <IframeWrapper @src="/preview" />
+    <IframeWrapper
+      @src="/preview"
+      @id="previewIframe"
+      @job={{this.job}}
+    />
   </div>
 </div>

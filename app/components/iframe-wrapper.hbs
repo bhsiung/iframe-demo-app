@@ -1,1 +1,11 @@
-<iframe src={{@src}} />
+<iframe
+  id={{@id}}
+  src={{@src}}
+  {{on-render
+    this.onRender
+    @job.title
+    @job.location
+    @job.company
+    @job.jobDescription
+  }}
+/>
