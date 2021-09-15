@@ -8,7 +8,6 @@ export default class IndexController extends Controller {
 
   @action
   onChange(e) {
-    console.log('onchange');
     const name = e.target.name;
     this.job = {
       ...this.job,
