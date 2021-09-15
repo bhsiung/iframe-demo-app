@@ -1,7 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d576052-3402-40bc-b33d-4276b82e5725/deploy-status)](https://app.netlify.com/sites/iframe-demo-app/deploys)
+
 # iframe-demo-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project aims to demostrate the functionality of postMessage on Ember Octane. Please find more detail in the [DEMO](https://iframe-demo-app.netlify.app/)
 
 ## Prerequisites
 
