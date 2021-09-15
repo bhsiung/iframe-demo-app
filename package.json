@@ -1,8 +1,8 @@
 {
-  "name": "ember-iframe-demo",
+  "name": "iframe-demo-app",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-iframe-demo goes here",
+  "description": "Small description for iframe-demo-app goes here",
   "repository": "",
   "license": "MIT",
   "author": "",

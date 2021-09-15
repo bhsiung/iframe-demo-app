@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'ember-iframe-demo',
+    modulePrefix: 'iframe-demo-app',
     environment,
     rootURL: '/',
     locationType: 'auto',

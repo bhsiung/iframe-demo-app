@@ -1,5 +1,5 @@
-import Application from 'ember-iframe-demo/app';
-import config from 'ember-iframe-demo/config/environment';
+import Application from 'iframe-demo-app/app';
+import config from 'iframe-demo-app/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
