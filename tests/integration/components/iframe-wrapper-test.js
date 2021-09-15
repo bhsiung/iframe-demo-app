@@ -7,20 +7,21 @@ module('Integration | Component | iframe-wrapper', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
-    await render(hbs`<IframeWrapper />`);
-
-    assert.dom(this.element).hasText('');
-
-    // Template block usage:
+    this.data = {
+      title: 'title1',
+      company: 'company1',
+      location: 'san jose',
+      jobDescription: 'test',
+    };
     await render(hbs`
-      <IframeWrapper>
-        template block text
-      </IframeWrapper>
+      <IframeWrapper
+        id="foo"
+        src="/preview"
+        @data={{this.data}}
+      />
     `);
 
-    assert.dom(this.element).hasText('template block text');
+    // TODO test data
+    assert.dom('#foo').hasAttribute('src', '/preview');
   });
 });
