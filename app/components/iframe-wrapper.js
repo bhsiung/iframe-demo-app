@@ -4,6 +4,6 @@ import { action } from '@ember/object';
 export default class IframeWrapperComponent extends Component {
   @action
   onRender(iframe) {
-    iframe.contentWindow.postMessage(this.args.job);
+    iframe.contentWindow.postMessage(this.args.data);
   }
 }

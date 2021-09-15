@@ -10,6 +10,9 @@ export default class IndexController extends Controller {
   onChange(e) {
     console.log('onchange');
     const name = e.target.name;
-    set(this, `job.${name}`, e.target.value);
+    this.job = {
+      ...this.job,
+      [name]: e.target.value,
+    };
   }
 }
